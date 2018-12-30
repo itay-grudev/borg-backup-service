@@ -23,7 +23,13 @@ borg init --encryption=repokey /path/to/repo
 # Installing borg-backup-service
 sudo mkdir /etc/borg-backup
 sudo git clone --depth 1 https://github.com/itay-grudev/borg-backup-service.git /etc/borg-backup
-sudo /etc/borg-backup/install.sh
+
+sudo ln -s /etc/borg-backup/borg-backup.service /etc/systemd/system/borg-backup.service
+sudo systemctl daemon-reload
+
+# To enable the automatic backup when the external disk is plugged in
+sudo ln -s /etc/borg-backup/40-backup.rules /etc/udev/rules.d/40-backup.rules
+sudo udevadm control --reload
 ```
 
 For full documentation on setting up a borg repository refer to
