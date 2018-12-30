@@ -6,7 +6,7 @@ disk using BorgBackup with support for creating an LVM snapshot.
 BorgBackup is an extremly powerful backup tool that supports deduplication,
 encryption and compression.
 
-## Usage
+## Installation
 
 My preffered way of installing is installing borg and placing the contents of
 this repository in `/etc/borg-backup`.
@@ -34,6 +34,13 @@ sudo udevadm control --reload
 
 For full documentation on setting up a borg repository refer to
 [Borg Quick Start Guide](https://borgbackup.readthedocs.io/en/stable/quickstart.html).
+
+## Usage
+
+```bash
+sudo systemctl start borg-backup
+sudo systemctl status borg-backup
+```
 
 ## Configuration
 
