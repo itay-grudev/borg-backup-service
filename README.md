@@ -1,7 +1,7 @@
 # Borg Backup Service
 
 A systemd service for creating a backup of your root linux drive to an external
-disk using BorgBackup.
+disk using BorgBackup with support for creating an LVM snapshot.
 
 BorgBackup is an extremly powerful backup tool that supports deduplication,
 encryption and compression.
@@ -55,7 +55,7 @@ borg create $BORG_OPTS \
 
 ## License
 
-This code is based on the article by [Andrew Keech](https://blog.andrewkeech.com/posts/170718_borg.html)
+This code is based on the article [Automated backups to a local hard drive](https://borgbackup.readthedocs.io/en/stable/deployment/automated-local.html)
 and is distributed under the terms of the GNU GPL v3.
 
 Copyright Itay Grudev 2018-.
