@@ -33,7 +33,7 @@ sudo udevadm control --reload
 ```
 
 For full documentation on setting up a borg repository refer to
-(https://borgbackup.readthedocs.io/en/stable/quickstart.html) [Borg Quick Start Guide].
+[Borg Quick Start Guide](https://borgbackup.readthedocs.io/en/stable/quickstart.html).
 
 ## Configuration
 
@@ -55,7 +55,7 @@ borg create $BORG_OPTS \
 
 ## License
 
-This code is based on the article by (https://blog.andrewkeech.com/posts/170718_borg.html)[Andrew Keech]
+This code is based on the article by [Andrew Keech](https://blog.andrewkeech.com/posts/170718_borg.html)
 and is distributed under the terms of the GNU GPL v3.
 
 Copyright Itay Grudev 2018-.
