@@ -58,4 +58,4 @@ borg create $BORG_OPTS \
 This code is based on the article [Automated backups to a local hard drive](https://borgbackup.readthedocs.io/en/stable/deployment/automated-local.html)
 and is distributed under the terms of the GNU GPL v3.
 
-Copyright Itay Grudev 2018-.
+Copyright Itay Grudev 2018.
