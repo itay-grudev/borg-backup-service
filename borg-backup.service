@@ -1,0 +1,11 @@
+[Unit]
+Description=Automatic Backups using Borg
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/borg-backup/backup.conf
+ExecStart=/etc/borg-backup/start.sh
+ExecStopPost=/etc/borg-backup/stop.sh
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,1 @@
+ACTION=="add", SUBSYSTEM=="bdi", DEVPATH=="/devices/virtual/bdi/*", TAG+="systemd", ENV{SYSTEMD_WANTS}="borg-backup.service"
